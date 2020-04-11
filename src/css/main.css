@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,500;1,700&display=swap');
+
+/* Color Variables */
+@import "./__variables.css";
+
+/* Main */
+:root {
+
+    --primary: #9e579d;
+    --secondary: #574b90;
+    --h2: #f6a8c6;
+    --text: #303a52;
+    --logoColor: #f6a8c6;
+    --linksHover: #ba53de;
+    --cards: #ffeff6;
+}
+html {
+    border-top: 10px solid var(--primary);
+    box-shadow: 0px 50px 55px grey;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+p {
+    color: var(--text);
+}
+.container {
+    
+    max-width: 80%;
+    margin: 30px auto;
+}
+h1{
+    color: var(--logoColor);
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    text-align: center;
+   
+}
+h2 {
+    color: var(--h2);
+    padding-bottom: 20px;
+}
+/* Header & Navigation  */
+header {
+   margin: 0 auto;
+}
+
+header img {
+    display: block;
+    width: 80;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--secondary);
+    text-decoration: none;
+    padding: 30px 20px 0 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: border 5s ease-in-out;
+    
+}
+nav::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url(/src/img/banner-bg-top.png) repeat-x;
+    height: 12px;
+    content: '';
+    z-index: 11;
+    
+}
+
+.about {
+   text-align: center;
+    margin: 50px 0px;
+}
+
+.about h2 {
+    padding: 30px;
+    
+}
+
+.about p{
+    line-height: 2rem;
+
+}
+
+
+
+.content-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: var(--cards);
+    border-radius: 30px;
+    margin: 30px 0px;
+    box-shadow: 0px 3px 5px #e2d6db;
+
+}
+
+.content-row img {
+     padding: 20px;
+     width:300px;
+     height:200px;
+     border-radius: 50px;
+     
+}
+
+.content-row img {
+    padding: 20px;
+}
+
+
+
+address {
+    color: var(--text)
+}
+
+
+/* Footer */
+
+.footer-content h3 {
+    text-align: center;
+    color: var(--logoColor);
+}
+
+.footer-content p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+/* About Page */
+
+.section-one {
+    
+    background-color: var(--logoColor);
+    border-radius: 30px;
+    height:400px;
+    width:100%;
+}
+
+.section-one h2,h5{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.galery {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.galery img {
+    border-radius: 50%;
+}
+
+
+.foods {
+    text-align: center;
+    color: white;
+    /* padding-top: 10px; */
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* hover */
+
+nav a:hover {
+    color: var(--linksHover);
+}
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: -4px;
+    border: 1px solid var(--secondary);
+  
+  
+}
